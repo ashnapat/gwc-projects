@@ -1,2 +1,3 @@
 # gwc-projects
-all about me haha
+here are all my projects
+whoop whoop
