@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <h1>Ashna Pattanayak</h1>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+  <hr>
+  <body>
+    <center>
+    <p>
+      I am a 15 year old girl from Livermore, California. I go to Granada High School and will be graduating in the year 2021. When I’m not at school, I am usually playing soccer or hanging out with my friends. My friends and I like to go shopping and get food together.
+    </p>
+    <p>
+      <div>
+        Here’s more information about me!
+      </div>
+      <div>
+        <b>Favorite Color:</b> Turquoise
+      </div>
+      <div>
+        <b>Favorite Food:</b> Korean BBQ
+      </div>
+      <div>
+        <b>Favorite Sport:</b> Soccer
+      </div>
+      <div>
+        <b>Favorite Thing To Do In My Freetime:</b> Hang out with my friends, watch a good movie/youtube and relax, organize my room so that I feel productive, go for a run
+      </div>
+      <div>
+        <b>Places I’ve Been To:</b> Hawaii, Arizona, Oregon, Nevada, New Jersey, Pennsylvania, Utah, Maryland, New York, India, Dominican Republic, Aruba, Costa Rica, Mexico (<em>6 times!</em>), Jamaica
+      </div>
+      <div>
+        <b>Favorite Website:</b> <a href="https://www.youtube.com/">Click here!</a>
+      </div>
+    </p>
+    <p>
+      <div>
+        My favorite kind of dog is a maltipoo.
+      </div>
+      <!-- <div>
+        <img src="https://furrybabiesinc.com/wp-content/uploads/2018/01/maltipoo-puppy-246x300.jpg">
+      </div> -->
+      <div class="container2">
+        <img src="https://furrybabiesinc.com/wp-content/uploads/2018/01/maltipoo-puppy-246x300.jpg" alt="mexico" class="image">
+        <div class="overlay">
+          <div class="text">Ahh so cute!!!</div>
+        </div>
+      </div>
+    </p>
+    <p>
+      <div>
+        Here's Mexico! I've been here!
+      </div>
+      <div class="container">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/ca/1b/f1/hotel-riu-palace-cabo.jpg" alt="mexico" class="image">
+        <div class="overlay">
+          <div class="text">So prettyyyyy!!!</div>
+        </div>
+      </div>
+    </p>
+    <p>
+      <div>
+        This is my friend Mina.
+      </div>
+      <div>
+        <img class="resize" id="mina" src="pic1.jpg" style="display:none">
+      </div>
+      <div>
+        <button class="button button5" onclick="document.getElementById('mina').style.display='block'">Show</button>
+        <button class="button button5" onclick="document.getElementById('mina').style.display='none'">Hide</button>
+      </div>
+    </p>
+    <p>
+      <div>
+        This is my friend Grace.
+      </div>
+      <div>
+        <img class="resize" id="grace" src="grace.jpg" style="display:none">
+      </div>
+      <div>
+        <button class="button button5" onclick="document.getElementById('grace').style.display='block'">Show</button>
+        <button class="button button5" onclick="document.getElementById('grace').style.display='none'">Hide</button>
+      </div>
+    </p>
+    <p>
+      <div>
+        These are my friends Tizuc(left) and Abbey(middle).
+      </div>
+      <div>
+        <img class="resize" id="tizucandabbey" src="tizucandabbey.jpg" style="display:none">
+      </div>
+      <div>
+        <button class="button button5" onclick="document.getElementById('tizucandabbey').style.display='block'">Show</button>
+        <button class="button button5" onclick="document.getElementById('tizucandabbey').style.display='none'">Hide</button>
+      </div>
+    </p>
+    <p>
+      <div>
+        Here are my friends Alyssa(middle) and Ishrat(right).
+      </div>
+      <div>
+        <img id="alyssa&ishrat" src="alyssa&ishrat.jpg" style="display:none">
+      </div>
+      <div>
+        <button class="button button5" onclick="document.getElementById('alyssa&ishrat').style.display='block'">Show</button>
+        <button class="button button5" onclick="document.getElementById('alyssa&ishrat').style.display='none'">Hide</button>
+      </div>
+    </p>
+    <p>
+      <div>
+        This is my whole friend group!
+      </div>
+      <div>
+        Picture 1:
+      </div>
+      <div>
+        <img class="resize" id="group1" src="group1.jpg" style="display:none">
+      </div>
+      <div>
+        <button class="button button5" onclick="document.getElementById('group1').style.display='block'">Show</button>
+        <button class="button button5" onclick="document.getElementById('group1').style.display='none'">Hide</button>
+      </div>
+      <div>
+        Picture 2:
+      </div>
+      <div>
+        <img class="resize" id="group2" src="group2.jpg" style="display:none">
+      </div>
+      <div>
+        <button class="button button5" onclick="document.getElementById('group2').style.display='block'">Show</button>
+        <button class="button button5" onclick="document.getElementById('group2').style.display='none'">Hide</button>
+      </div>
+    </p>
+    </center>
+  </body>
+</html>
