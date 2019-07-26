@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Special+Elite&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+</head>
+<style>
+  body, html {
+    height: 80%;
+    font-family: 'Poiret One', cursive;
+  }
+  #map {
+    height: 500px;
+    width: 100%;
+ }
+
+   .switch {
+     position: relative;
+     display: inline-block;
+     width: 60px;
+     height: 34px;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  .slider.round:before {
+    border-radius: 50%;
+  }
+</style>
+<body>
+  <div style="height:1000px">
+    <div style="height:250px">
+    <font color = "white">
+    <font size = "+10">
+    <ul>
+      <li><a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/finalProject.html#home';" href="#home">Home</a></li>
+      <li><a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/finalProject.html#home';" href="#home">Map</a></li>
+        <!-- <li><a href="#contact">Contact</a></li> -->
+      <li><a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/aboutPage.html';" href="#about">About Us</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Resources
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/resourcesPage.html';" href="#shelters">Shelters</a>
+          <a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/groceryStores.html';" href="#">Grocery Stores</a>
+          <a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/clothing.html';" href="#">Clothing</a>
+          <a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/organizations.html';" href="#">Organizations</a>
+          <a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/jobOpportunities.html';" href="#">Job Opportunities</a>
+        </div>
+      </div>
+      <img src="logo.png" width="84px" alt="alt text" style="float: right">
+    </ul>
+    <p>
+      <div id="map"></div>
+      <div id="buttons">
+      </div>
+      <script>
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXkvs8eOPcpLAq9AUMNoo0YW71OuHjNg0&callback=initMap"
+      async defer>
+      </script>
+      <script src="homelessness2.js"> </script>
+    </p>
+    <p>
+      <font size ="5">
+   <center>
+       Shelters:
+       <label class="switch">
+        <input type="checkbox" onclick="shelter()">
+        <span class="slider round"></span>
+       </label>
+       Grocery Stores:
+       <label class="switch">
+        <input type="checkbox" onclick="grocery()">
+        <span class="slider round"></span>
+       </label>
+       Clothing:
+       <label class="switch">
+        <input type="checkbox" onclick="clothing()">
+        <span class="slider round"></span>
+       </label>
+       Organizations:
+       <label class="switch">
+        <input type="checkbox" onclick="organization()">
+        <span class="slider round"></span>
+       </label>
+       Job Opportunities:
+       <label class="switch">
+        <input type="checkbox" onclick="jobOpp()">
+        <span class="slider round"></span>
+       </label>
+    </p>
+</body>
+</html>

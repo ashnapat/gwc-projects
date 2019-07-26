@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Special+Elite&display=swap" rel="stylesheet">
+  <!-- <h1><center>About the Creators</center></h1> -->
+</head>
+<style>
+  body, html {
+    height: 80%;
+    font-family: 'Poiret One', cursive;
+  }
+</style>
+<body>
+  <div style="height:1000px">
+    <div style="height:250px">
+    <font color = "white">
+    <font size = "+10">
+    <ul>
+      <li><a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/finalProject.html#home';" href="#home">Home</a></li>
+      <li><a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/finalProjectMap.html';" href="#home">Map</a></li>
+        <!-- <li><a href="#contact">Contact</a></li> -->
+      <li><a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/aboutPage.html';" href="#about">About Us</a></li>
+      <div class="dropdown">
+        <button class="dropbtn">Resources
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/resourcesPage.html';" href="#shelters">Shelters</a>
+          <a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/groceryStores.html';" href="#">Grocery Stores</a>
+          <a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/clothing.html';" href="#">Clothing</a>
+          <a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/organizations.html';" href="#">Organizations</a>
+          <a onclick="window.location.href = 'file:///C:/Users/GWC/Desktop/Gwc/jobOpportunities.html';" href="#">Job Opportunities</a>
+        </div>
+      </div>
+      <img src="logo.png" width="84px" alt="alt text" style="float: right">
+    </ul>
+    <center><h1>Resources</h1></center>
+  </div>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Shelters')">Shelters</button>
+    <button class="tablinks" onclick="openCity(event, 'Grocery Stores')">Grocery Stores</button>
+    <button class="tablinks" onclick="openCity(event, 'Clothing')">Clothing</button>
+    <button class="tablinks" onclick="openCity(event, 'Organizations')">Organizations</button>
+    <button class="tablinks" onclick="openCity(event, 'Job Opportunities')" id="defaultOpen">Job Opportunities</button>
+
+  </div>
+
+  <div id="Shelters" class="tabcontent">
+    <p><img src="shelter.jpg" width="500px" alt="alt text" style="float: right">
+      <h4>Shelters</h4>
+      <h3><div><a href="https://svdp-sf.org/what-we-do/msc-shelter/">St. Vincent De Paul Society</a></div></h3>
+      <h3><div><a href="https://sfhomeless.wikia.org/wiki/Episcopal_Community_Services_-_Sanctuary_201_8th_Street">The Sanctuary</a></div></h3>
+      <h3><div><a href="https://ecs-sf.org/">Next Door Shelter</a></div></h3>
+      <h3><div><a href="https://hamiltonfamilies.org/">Hamilton Familes</a></div></h3>
+      <h3><div><a href="https://www.cityteam.org/san-francisco/">Cityteam</a></div></h3>
+      <h3><div><a href="http://www.mnhc.org/community_programs/mission-neighborhood-resource-center/">Mission Neighborhood Health Center</a></div></h3>
+
+      <h3><div>Pet Shelters: </div></h3>
+      <h3><div><a href="https://www.petsofthehomeless.org/get-help/">Pets of the Homeless</a></div></h3>
+  </div>
+
+  <div id="Grocery Stores" class="tabcontent">
+    <p><img src="store.jpg" width="500px" alt="alt text" style="float: right">
+      <h4>Grocery Stores</h4>
+      <h3><div><a href="https://www.yelp.com/biz/foods-co-san-francisco-4">Foods Co</a></div></h3>
+      <h3><div><a href="https://www.foodpantries.org/">Food Pantries</a></div></h3>
+      <h3><div><a href="https://www.rainbow.coop/">Rainbow Grocery</a></div></h3>
+      <h3><div><a href="https://gussmarket.com/">Gus's Haight Street Market</a></div></h3>
+      <h3><div><a href="https://lebeaumarket.com/">Le Beau Market</a></div></h3>
+      <h3><div><a href="https://www.wholefoodsmarket.com/stores/2001marketstreet">Whole Foods</a></div></h3>
+
+  </div>
+
+  <div id="Clothing" class="tabcontent">
+    <p><img src="clothes.jpeg" width="500px" alt="alt text" style="float: right">
+      <h4>Clothing</h4>
+      <h3><div><a href="https://www.stanthonysf.org/clothing-donation-san-francisco/">St. Anthony's</a></div></h3>
+      <h3><div><a href="https://sfgoodwill.org/shop/shop-online/?utm_campaign=Fillmore&utm_medium=Ad-Driven-Website&utm_source=Yelp">Goodwill</a></div></h3>
+      <h3><div><a href="https://www.selfhelpelderly.org/">Self Help Elderly</a></div></h3>
+  </div>
+
+  <div id="Organizations" class="tabcontent">
+    <h4>Organizations</h4>
+    <h3><div>Clinics:</div></h3>
+    <h3><div><a href="https://www.childrenshealthfund.org/">Childrens Health Fund</a></div></h3>
+    <h3><div><a href="https://www.nhchc.org/resources/national-hch-grantee-directory/">National HCH</a></div></h3>
+    <h3><div><a href="http://www.homelessprenatal.org/">Homeless Prenatal Program</a></div></h3>
+    <h3><div><a href="https://www.sanfrancisco.va.gov/locations/downtownclinic.asp">San Francisco VA Downtown Clinic</a></div></h3>
+    <h3><div>Tech Resources:</div></h3>
+    <h3><div><a href="https://www.stanthonysf.org/techlab/">St. Anthony's</a></div></h3>
+  </div>
+
+  <div id="Job Opportunities" class="tabcontent">
+    <h4>Job Opportunities</h4>
+    <h3><div><a href="www.arribajuntos.org">Arriba Juntos</a></div></h3>
+    <h3><div><a href="www.cccyo.org">St. Joseph's Family Center</a></div></h3>
+    <h3><div><a href="http://www.chp-sf.org/">Community Housing Partnership</a></div></h3>
+    <h3><div><a href="http://www.ecs-sf.org/">Episcopal Community Services</a></div></h3>
+    <h3><div><a href="http://www.swords-to-plowshares.org/">Swords to Plowshares</a></div></h3>
+  </div>
+
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+</body>
+</html>
